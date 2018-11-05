@@ -25,14 +25,16 @@ public class Row {
 				}
 			}
 			
-			System.out.print(BinaryRule.charAt(0));
-			System.out.print(BinaryRule.charAt(1));
-			System.out.print(BinaryRule.charAt(2));
-			System.out.print(BinaryRule.charAt(3));
-			System.out.print(BinaryRule.charAt(4));
-			System.out.print(BinaryRule.charAt(5));
-			System.out.print(BinaryRule.charAt(6));
-			System.out.print(BinaryRule.charAt(7)+"\n\n");
+//			System.out.print(BinaryRule.charAt(0));
+//			System.out.print(BinaryRule.charAt(1));
+//			System.out.print(BinaryRule.charAt(2));
+//			System.out.print(BinaryRule.charAt(3));
+//			System.out.print(BinaryRule.charAt(4));
+//			System.out.print(BinaryRule.charAt(5));
+//			System.out.print(BinaryRule.charAt(6));
+//			System.out.print(BinaryRule.charAt(7)+"\n\n");
+			
+			
 			
 			return previousRow;
 		}
