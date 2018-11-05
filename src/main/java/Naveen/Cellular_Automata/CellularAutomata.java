@@ -9,7 +9,7 @@ import Naveen.Cellular_Automata.*;
  */
 public class CellularAutomata extends JFrame
 {
-	
+	int NumberOfLines=1;
 	Grid grid = new Grid();
 	/**
 	 * 
@@ -18,8 +18,8 @@ public class CellularAutomata extends JFrame
 
 	public CellularAutomata() {
 		setVisible(true);
-		setResizable(false);
-		setSize(1500,900);
+//		setResizable(false);
+		setSize(1654,1000);
 		grid.GenerateGridForRule();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		validate();
@@ -35,8 +35,16 @@ public class CellularAutomata extends JFrame
     {	g.setColor(Color.YELLOW);
     	g.fillRect(0, 0, WIDTH, HEIGHT);
     	g.setColor(Color.GRAY);
-    	g.fillRect(100, 200, 1214, 602);
+    	g.fillRect(100, 200, 1416, 716);
     	g.setColor(Color.WHITE);
-    	grid.drawGrid(g);
+    	grid.drawGrid(g, NumberOfLines);
+    	NumberOfLines++;
+    	for(long i=0;i<100000000; i++);
+    	if(NumberOfLines<=51)
+    	{
+    		repaint();
+    	}
+    		
+    	
     }
 }
